@@ -1,0 +1,12 @@
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/controller/MarcaController.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/model/Marca.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/config/CorsConfig.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/EstoqueVeiculosApplication.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/model/Modelo.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/repository/MarcaRepository.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/service/VeiculoService.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/controller/VeiculoController.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/controller/ModeloController.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/repository/ModeloRepository.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/repository/VeiculoRepository.java
+/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot/src/main/java/com/unifecaf/estoqueveiculos/model/Veiculo.java

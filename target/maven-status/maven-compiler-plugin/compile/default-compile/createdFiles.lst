@@ -1,0 +1,13 @@
+com/unifecaf/estoqueveiculos/controller/VeiculoController.class
+com/unifecaf/estoqueveiculos/config/CorsConfig.class
+com/unifecaf/estoqueveiculos/EstoqueVeiculosApplication.class
+com/unifecaf/estoqueveiculos/model/Veiculo.class
+com/unifecaf/estoqueveiculos/controller/ModeloController.class
+com/unifecaf/estoqueveiculos/repository/ModeloRepository.class
+com/unifecaf/estoqueveiculos/repository/VeiculoRepository.class
+com/unifecaf/estoqueveiculos/config/CorsConfig$1.class
+com/unifecaf/estoqueveiculos/model/Modelo.class
+com/unifecaf/estoqueveiculos/service/VeiculoService.class
+com/unifecaf/estoqueveiculos/model/Marca.class
+com/unifecaf/estoqueveiculos/repository/MarcaRepository.class
+com/unifecaf/estoqueveiculos/controller/MarcaController.class
