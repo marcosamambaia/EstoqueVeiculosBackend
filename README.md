@@ -55,12 +55,13 @@ Modelos:
 
 Estrutura do projeto
 --------------------
+'''
 src/main/java/com/unifecaf/estoqueveiculos/
  ├── controller/   -> Controllers REST
  ├── dto/          -> Data Transfer Objects (DTOs)
  ├── model/        -> Entidades JPA
  └── repository/   -> Interfaces de acesso ao banco
-
+'''
 Autor
 -----
 Marco Samambaia
