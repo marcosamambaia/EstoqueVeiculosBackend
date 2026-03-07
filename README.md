@@ -121,13 +121,14 @@ Perfis de Usuário
 
 Estrutura do projeto
 --------------------
+```
 src/main/java/com/unifecaf/estoqueveiculos/
  ├── controller/   -> Controllers REST
  ├── dto/          -> Data Transfer Objects (DTOs)
  ├── model/        -> Entidades JPA
  ├── service/      -> Regras de negócio
  └── repository/   -> Interfaces de acesso ao banco
-
+```
 ---
 
 Testes com Postman
