@@ -47,7 +47,7 @@ Como rodar o projeto
 Banco de Dados com Docker
 -------------------------
 Para rodar o MySQL via Docker:
-
+```
 docker run --name mysql-estoque \
   -e MYSQL_ROOT_PASSWORD=123456 \
   -e MYSQL_DATABASE=estoque_veiculos \
@@ -57,7 +57,7 @@ docker run --name mysql-estoque \
 - MYSQL_ROOT_PASSWORD=123456 → senha do usuário root  
 - MYSQL_DATABASE=estoque_veiculos → banco criado automaticamente  
 - -p 3306:3306 → expõe a porta 3306 para conexão local  
-
+```
 Verifique se o container está rodando:
 docker ps
 
@@ -68,6 +68,7 @@ docker exec -it mysql-estoque mysql -uroot -p
 
 Configuração do application.properties
 --------------------------------------
+```
 # Porta do servidor
 server.port=8081
 
@@ -81,7 +82,7 @@ spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
-
+```
 ---
 
 Endpoints principais
@@ -115,18 +116,20 @@ Perfis de Usuário
 
 Estrutura do projeto
 --------------------
+```
 src/main/java/com/unifecaf/estoqueveiculos/
  ├── controller/   -> Controllers REST
  ├── dto/          -> Data Transfer Objects (DTOs)
  ├── model/        -> Entidades JPA
  ├── service/      -> Regras de negócio
  └── repository/   -> Interfaces de acesso ao banco
-
+```
 ---
 
 Testes com Postman
 ------------------
 Cadastro de Usuário:
+```
 POST http://localhost:8081/usuarios/cadastro
 Body:
 {
@@ -156,7 +159,7 @@ Body:
   "quilometragem": 15000,
   "status": "DISPONIVEL"
 }
-
+```
 ---
 
 Autor
