@@ -26,19 +26,20 @@ Tecnologias utilizadas
 Como rodar o projeto
 --------------------
 1. Clone o repositório:
-```
- git clone https://github.com/marcosamambaia/EstoqueVeiculosBackend.git
+   git clone https://github.com/marcosamambaia/EstoqueVeiculosBackend.git
    cd EstoqueVeiculosBackend
-```
-2. Compile e rode com Maven:
-```
-    mvn spring-boot:run
-```
+
+2. Acesse a pasta raiz do backend (onde está o pom.xml).
+   Exemplo no seu ambiente:
+   cd "/home/marco/Área de trabalho/Java/TrabalhoFinal/Spring-Boot"
+
+3. Compile e rode com Maven:
+   mvn spring-boot:run
+
 4. A API estará disponível em:
-```
    http://localhost:8081
-```
-6. Para que o sistema funcione corretamente, é necessário também rodar o frontend React
+
+5. Para que o sistema funcione corretamente, é necessário também rodar o frontend React
    que estará disponível no repositório EstoqueVeiculosFrontend.
    O frontend se conecta ao backend na porta 8081.
 
@@ -48,6 +49,7 @@ Banco de Dados com Docker
 -------------------------
 Para rodar o MySQL via Docker:
 ```
+
 docker run --name mysql-estoque \
   -e MYSQL_ROOT_PASSWORD=123456 \
   -e MYSQL_DATABASE=estoque_veiculos \
@@ -59,11 +61,14 @@ docker run --name mysql-estoque \
 - -p 3306:3306 → expõe a porta 3306 para conexão local  
 ```
 Verifique se o container está rodando:
+```
 docker ps
+```
 
 Acesse o banco:
+```
 docker exec -it mysql-estoque mysql -uroot -p
-
+```
 ---
 
 Configuração do application.properties
@@ -116,14 +121,13 @@ Perfis de Usuário
 
 Estrutura do projeto
 --------------------
-```
 src/main/java/com/unifecaf/estoqueveiculos/
  ├── controller/   -> Controllers REST
  ├── dto/          -> Data Transfer Objects (DTOs)
  ├── model/        -> Entidades JPA
  ├── service/      -> Regras de negócio
  └── repository/   -> Interfaces de acesso ao banco
-```
+
 ---
 
 Testes com Postman
@@ -164,5 +168,5 @@ Body:
 
 Autor
 -----
-Marco Samambaia
+Marco Samambaia  
 Projeto acadêmico desenvolvido em Java com Spring Boot.
