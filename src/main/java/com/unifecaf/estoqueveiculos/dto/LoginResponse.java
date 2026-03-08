@@ -1,17 +1,20 @@
 package com.unifecaf.estoqueveiculos.dto;
 
-// DTO simples para resposta de login
 public class LoginResponse {
     private String mensagem;
     private String perfil;
+    private String email;
+    private String nome;
 
-    // Construtor
-    public LoginResponse(String mensagem, String perfil) {
+    public LoginResponse(String mensagem, String perfil, String email, String nome) {
         this.mensagem = mensagem;
         this.perfil = perfil;
+        this.email = email;
+        this.nome = nome;
     }
 
-    // Getters
     public String getMensagem() { return mensagem; }
     public String getPerfil() { return perfil; }
+    public String getEmail() { return email; }
+    public String getNome() { return nome; }
 }

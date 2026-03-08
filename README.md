@@ -5,8 +5,7 @@
 Este é o backend do sistema Estoque de Veículos, desenvolvido em Spring Boot como parte de um trabalho acadêmico.  
 O objetivo é fornecer uma API REST para gerenciamento de Marcas, Modelos e Veículos, com controle de acesso por perfis de usuário (ADMIN e VENDEDOR).
 
-IMPORTANTE
-----------
+IMPORTANTE  
 Este backend depende do frontend em React (EstoqueVeiculosFrontend) para funcionar corretamente.  
 Os dois projetos estarão disponíveis nos meus repositórios GitHub:
 - EstoqueVeiculosBackend
@@ -47,50 +46,46 @@ O backend roda na porta 8081 e deve estar ativo para que o frontend consiga cons
 
 ## Configuração e execução
 
-1. Banco de dados (MySQL via Docker)
-```
-docker run --name mysql-estoque -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=estoque -p 3306:3306 -d mysql:8
+1. Banco de dados (MySQL via Docker)  
+   docker run --name mysql-estoque -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=estoque -p 3306:3306 -d mysql:8
 
-3. Configuração do application.properties
-spring.datasource.url=jdbc:mysql://localhost:3306/estoque
-spring.datasource.username=root
-spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-```
-4. Executar o backend
-```
-./mvnw spring-boot:run
-```
-O backend ficará disponível em:
-```
+2. Configuração do application.properties  
+   spring.datasource.url=jdbc:mysql://localhost:3306/estoque  
+   spring.datasource.username=root  
+   spring.datasource.password=root  
+   spring.jpa.hibernate.ddl-auto=update  
+   spring.jpa.show-sql=true
+
+3. Executar o backend  
+   ./mvnw spring-boot:run
+
+O backend ficará disponível em:  
 http://localhost:8081
-```
+
 ------------------------------------------------------------
 
 ## Endpoints principais
 
 Usuários:
-```
 - POST /usuarios/cadastro → cadastrar novo usuário.
 - POST /usuarios/login → autenticar usuário.
+
+Exemplo de cadastro via Postman (ADMIN):  
 ```
-Exemplo de cadastro via Postman (ADMIN):
-```
-{
-  "nome": "Administrador",
-  "email": "admin@test.com",
-  "senha": "123456",
-  "perfil": "ADMIN"
+{  
+"nome": "Administrador",  
+"email": "admin@test.com",  
+"senha": "123456",  
+"perfil": "ADMIN"  
 }
 ```
-Exemplo de cadastro via Postman (VENDEDOR):
+Exemplo de cadastro via Postman (VENDEDOR):  
 ```
-{
-  "nome": "João",
-  "email": "joao@test.com",
-  "senha": "123456",
-  "perfil": "VENDEDOR"
+{  
+"nome": "João",  
+"email": "joao@test.com",  
+"senha": "123456",  
+"perfil": "VENDEDOR"  
 }
 ```
 ------------------------------------------------------------
@@ -107,4 +102,4 @@ Os usuários poderiam ser cadastrados pelo frontend, mas optamos por usar o Post
 ------------------------------------------------------------
 
 ## Licença
-Projeto acadêmico desenvolvido para fins de estudo.
+Projeto acadêmico desenvolvido para fins de estudo.  
